@@ -1,0 +1,12 @@
+{
+  "name": "asystent-dziennikarza-ekonomicznego",
+  "version": "1.0.0",
+  "description": "Aplikacja asystenta dziennikarza ekonomicznego",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server . -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

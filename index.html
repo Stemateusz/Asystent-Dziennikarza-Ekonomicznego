@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Asystent Dziennikarza Ekonomicznego</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Twoje codzienne podsumowanie kluczowych informacji gospodarczych z Gemini API.">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@^0.7.0",
+          "marked": "https://esm.sh/marked@^15.0.7"
+        }
+      }
+    </script>
+    <script type="module" src="index.tsx"></script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <main>
+      <header>
+        <h1>Asystent Dziennikarza Ekonomicznego</h1>
+        <p>Twoje codzienne podsumowanie kluczowych informacji gospodarczych.</p>
+      </header>
+      <div class="controls">
+        <button id="generate-button">Pobierz dzisiejszy raport</button>
+      </div>
+      <div id="loader" class="loader hidden" role="status" aria-label="Ładowanie raportu"></div>
+      <div id="response-container" aria-live="polite"></div>
+      <div id="sources-container" class="hidden">
+        <h2>Źródła</h2>
+        <ul id="sources-list"></ul>
+      </div>
+    </main>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
